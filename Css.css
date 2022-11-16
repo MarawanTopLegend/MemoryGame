@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #3c5c84  ;
+}
+
+    .content{
+        width: 70%;
+    margin: auto;
+    padding: 5px;
+}
+.toplayer{
+    display: flex;
+   justify-content: space-between;
+   border: 5px blue solid;
+   border-radius: 10px;
+border-right: 0;
+   border-top: 0;
+   padding: 10px;
+   background-color: rgb(11, 0, 31);
+}
+.toplayer p{
+color: white;
+font-weight: 900;
+}
+.ContainerQuestion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4 , 1fr);
+    gap: 5px 5px;
+    margin-top: 10px;
+    height: 60em;
+}
+.QuestionMark p{
+    font-size: 1.5em;
+}
+.QuestionMark{
+    background-color: #000000;
+    text-align: center;
+    font-size: 5em;
+    font-weight: 600;
+    color: white;
+    border: 2px solid blue;
+    cursor: pointer;
+    transition: 0.3s all;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+img{
+    display: flex;
+    transform: rotatey(180deg) scale(0.7);
+    width: 100%;
+}
+.imagediv{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:1023px){
+    .content{
+        width: 80%;
+      }
+      .
+    }
+@media (max-width:641px){
+body{
+    font-size: 10px;
+}
+.content{
+    width: 90%;
+}
+.ContainerQuestion{
+    height: 30em;
+}
+.QuestionMark p{
+    font-size: 1em;
+}
+
+}
+@media (max-width:300px){
+body{
+    font-size: 8px;
+}
+}
